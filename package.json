@@ -10,10 +10,16 @@
     "build": "node build/build.js"
   },
   "dependencies": {
-    "vue": "^2.5.2"
+    "ant-design-vue": "^1.7.8",
+    "enquire.js": "^2.1.6",
+    "vue": "^2.5.2",
+    "vue-router": "^3.5.2",
+    "vuex": "^3.6.2"
   },
   "devDependencies": {
+    "@vue/cli-service": "^4.5.15",
     "autoprefixer": "^7.1.2",
+    "axios": "^0.24.0",
     "babel-core": "^6.22.1",
     "babel-helper-vue-jsx-merge-props": "^2.0.3",
     "babel-loader": "^7.1.1",
