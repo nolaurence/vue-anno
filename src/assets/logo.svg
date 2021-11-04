@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="150" viewBox="0 0 600 150">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 125px;
+        fill: #18d9f0;
+        font-family: "Ink Free";
+      }
+    </style>
+  </defs>
+  <text id="Annotated" class="cls-1" x="30" y="115">Annotated</text>
+</svg>
