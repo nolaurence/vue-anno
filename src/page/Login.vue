@@ -1,17 +1,12 @@
 <template>
-  <div class="container-wrapper animated fadeIn">
-    <div class="logo">
-      <embed src="../assets/logo.svg" type="image/svg+xml"/>
-    </div>
-    <div class="login-form">
-      <LoginForm @success="onLoginSucceed" />
-<!--      <router-link v-if="resetPasswordButtonVisible" class="tip" :to="{ name: 'ResetPassword' }">-->
-<!--        找回密码-->
-<!--      </router-link>-->
-<!--      <a class="tip" @click="handleToggleShowApiForm">-->
-<!--        <a-icon type="setting" />-->
-<!--      </a>-->
-    </div>
+  <div class="container">
+      <LoginForm class="login-form" @success="onLoginSucceed" />
+      <!--      <router-link v-if="resetPasswordButtonVisible" class="tip" :to="{ name: 'ResetPassword' }">-->
+      <!--        找回密码-->
+      <!--      </router-link>-->
+      <!--      <a class="tip" @click="handleToggleShowApiForm">-->
+      <!--        <a-icon type="setting" />-->
+      <!--      </a>-->
   </div>
 </template>
 
@@ -85,3 +80,24 @@ export default {
 }
 
 </script>
+
+<style>
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-form {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  box-shadow: 0 4px 16px 0
+    rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+</style>

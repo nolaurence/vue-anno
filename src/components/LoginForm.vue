@@ -7,6 +7,9 @@
       layout="vertical"
       @keyup.enter.native="form.needAuthCode ? handleLogin() : handleLoginClick()"
     >
+      <a-form-model-item>
+        <img class="logo" src="../assets/logo.svg" alt="">
+      </a-form-model-item>
       <a-form-model-item v-if="!form.needAuthCode" prop="username">
         <a-input v-model="form.model.username" placeholder="用户名/邮箱">
           <a-icon slot="prefix" style="color: rgba(0,0,0,.25)" type="user" />
@@ -121,5 +124,11 @@ export default {
 </script>
 
 <style scoped>
-
+.logo {
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  object-fit: contain;
+  object-position: center;
+}
 </style>
